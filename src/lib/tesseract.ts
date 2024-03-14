@@ -1,4 +1,4 @@
-import Tesseract from "tesseract.js";
+import * as Tesseract from "tesseract.js";
 
 export async function ExtractText(image: Tesseract.ImageLike): Promise<string> {
     const worker = await Tesseract.createWorker('eng');

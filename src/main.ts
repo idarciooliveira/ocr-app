@@ -3,8 +3,8 @@ import fastifyView from '@fastify/view'
 import fastifyStatic from '@fastify/static'
 import fastitfyMultipart from '@fastify/multipart'
 
-import ejs from 'ejs'
-import path from "path";
+import * as ejs from 'ejs'
+import * as path from "path";
 import { ExtractText } from "./lib/tesseract";
 
 const server = fastify({
